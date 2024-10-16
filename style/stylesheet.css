@@ -1,0 +1,423 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+}
+
+.navbar {
+  background-color: #1F1F1F;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que a navbar fique sobre outros elementos */
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: auto;
+}
+.navbar-nav {
+  margin: 0 auto; /* Centraliza os itens da navbar */
+}
+
+.navbar-nav .nav-item {
+  padding: 0 10px; /* Espaçamento entre os itens */
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.hero-section {
+  background-color: #0D0D0D;
+  min-height: 70vh;
+  padding: 50px 0;
+  text-align: center;
+  height: 100vh;
+  padding: 150px;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  color: #888;
+  margin-top: 20px;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Cor preta com 50% de opacidade */
+  z-index: 1;
+}
+.hero-section .hello-world,
+.hero-section h1,
+.hero-section p,
+.hero-section .video-container {
+    position: relative;
+    z-index: 2;
+}
+
+.highlight {
+  color: #A456FF;
+}
+
+.video-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container iframe {
+  width: 40%;
+  height: 400px;
+}
+
+.explore-section {
+  background-color: dark;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.explore-section h2 {
+  color: #A456FF;
+  font-size: 2.5rem;
+  margin-top: 100px;
+}
+
+.explore-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.explore-icons a {
+  text-decoration: none;
+  color: inherit; /* Isso mantém a cor original do texto */
+}
+
+.explore-icons a:hover {
+  text-decoration: none; /* Garante que o sublinhado não apareça no hover */
+  color: #A456FF; /* Se quiser alterar a cor no hover, pode fazer isso aqui */
+}
+
+
+.icon-card {
+  background-color: #272727;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.icon-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-card i {
+  font-size: 2.5rem;
+  color: #A456FF;
+  margin-bottom: 10px;
+}
+
+.hello-world {
+  display: inline-block;
+  background-color: #141414;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.hello-world span {
+  color: #A456FF;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+footer {
+  background-color: #1F1F1F;
+  padding: 20px 0;
+  color: white;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+.footer-section {
+  margin-top: 150px;
+}
+
+.footer-section h5 {
+  color: #A456FF;
+  margin-bottom: 15px;
+}
+
+.footer-section a {
+  color: #A456FF;
+}
+
+/* Estilos para redes sociais */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #A456FF;
+}
+
+/* Seção de Logos das Empresas */
+.company-section {
+  background-color: #1E1E1E;
+  padding: 30px 0;
+  text-align: center;
+}
+.additional-section h2 {
+  text-align: center; /* Centraliza horizontalmente o título */
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.additional-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  padding: 30px 0;
+}
+.additional-section {
+  position: relative;
+  background-image: url('assets/bg2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 30px 0;
+}
+.additional-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Ajuste a opacidade conforme necessário */
+  z-index: 1;
+}
+.additional-section .container {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.company-section h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.company-logos img {
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.company-logos img:hover {
+  transform: scale(1.1);
+}
+
+.carousel-content {
+  color: #fff;
+  text-align: center;
+  background-color: #1E1E1E;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 80%; 
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px; /* Altura fixa para todos os containers */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.carousel-content h3 {
+    font-size: 1.6rem; /* Reduzi o tamanho do texto */
+    color: #A456FF;
+    margin-bottom: 50px; /* Ajustei o espaço inferior */
+}
+
+.carousel-content p {
+    font-size: 1.1rem; /* Reduzi o tamanho do texto */
+    color: #ccc;
+    margin-bottom: 1px;
+}
+
+.carousel-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.carousel-content ul li {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+.carousel-inner {
+  max-width: 80%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  opacity: 1;
+}
+
+/* Ajustes para o container do carousel */
+#aboutCarousel {
+    margin-top: 20px; /* Reduzi o espaço entre o título e o carousel */
+}
+
+.benefits-section {
+  padding: 50px 0;
+  background-color: black;
+}
+
+.benefit-icon {
+  width: 80px;
+  margin-bottom: 20px;
+}
+.benefits-section h2 {
+  color: #fff; /* Cor personalizada */
+  font-size: 2.5rem; /* Tamanho do texto */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 40px; /* Espaço inferior para separar dos cards */
+}
+.benefits-section .highlight {
+  color: #A456FF; /* Cor personalizada */
+}
+
+.benefits-section h3 {
+  color: #A456FF;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.benefits-section p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.benefits-section .col-md-4 {
+  margin-bottom: 30px;
+}
+.how-we-work-section {
+  position: relative;
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.how-we-work-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/bg.jpeg'); /* Imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Ajuste a opacidade conforme necessário */
+  z-index: 1;
+}
+
+.how-we-work-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.how-we-work-section h2 {
+  color: #fff; /* Cor personalizada */
+  font-size: 2.5rem; /* Tamanho do texto */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 40px; /* Espaço inferior para separar dos cards */
+}
+.how-we-work-section .highlight {
+  color: #A456FF; /* Cor personalizada */
+}
+
+
+.how-we-work-card {
+  background-color: #272727;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-we-work-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+  color: #A456FF;
+}
+
+.card-text {
+  color: #ccc;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}

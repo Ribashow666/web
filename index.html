@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RIBAS Tecnologia e Inovação">
+  <meta name="keywords" content="programação, inovação, tecnologia, full-stack">
+  <title>Site</title>
+
+  <link rel="shortcut icon" href="assets/Tavi Gevinson.jpg" type="image/png">
+
+  <!-- Link para Bootstrap 5 via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link para FontAwesome via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts (Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/stylesheet.css">
+  
+</head>
+
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <!-- Substituindo o texto "RIBAS" por uma imagem -->
+    <a href="#" class="navbar-brand">
+      <img src="assets/8bpaj8hw7t361.png" alt="Logo da RIBAS">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about ">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#how-we-work">Atuação</a></li>
+        <li class="nav-item"><a class="nav-link" href="#explore">Explore</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home" style="background-image: url('assets/1308898.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; padding: 50px 0; height: 100vh;">
+    <!-- "Hello World_" Section -->
+    <div class="hello-world">
+      Hello World<span>_</span>
+    </div>
+    <div>
+      <h1>Comece sua jornada na <span class="highlight">RIBAS</span></h1>
+      <p>Você faz parte do sistema!</p>
+
+      <!-- Video Section -->
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/jPZEGEuBK1Y?si=baf4mnSIvkRYtH2W" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nova Seção (Conteúdo Adicional) com Carousel -->
+  <section class="additional-section" id="about" style="background-image: url('assets/bg2.jpeg'); background-size: cover; background-position: center; background-attachment: fixed; padding: 30px 0;">
+    <div class="container">
+      <h2>Sobre a <span class="highlight">RIBAS</h2>
+      
+      <!-- Carousel implementado com Indicators -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicadores do carousel -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <!-- Primeiro slide -->
+          <div class="carousel-item active">
+            <div class="carousel-content">
+              <h3>Nossa História</h3>
+              <p>O RIBAS é uma empresa especializada em administração de empresas e gestão de pessoas, cujo principal objetivo é encontrar soluções para clientes exigentes. Contamos com uma equipe altamente capacitada para trabalhar em busca de resultados acima da média.</p>
+            </div>
+          </div>
+          <!-- Segundo slide -->
+          <div class="carousel-item">
+            <div class="carousel-content">
+              <h3>Nossos Serviços</h3>
+              <p>Planejamento, controle e organização em uma única ferramenta. Com o sistema RIBAS, é possível otimizar a execução das tarefas, de forma segura e automatizada, possibilitando aos gestores um efetivo acompanhamento dos trabalhos programados e executados.</p>
+            </div>
+          </div>
+          <!-- Terceiro slide -->
+          <div class="carousel-item">
+            <div class="carousel-content">
+              <h3>Nossos Valores</h3>
+              <ul>
+                <li>Inovação</li>
+                <li>Compromisso</li>
+                <li>Excelência</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Controles do Carousel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Nova Seção de Benefícios -->
+<section class="benefits-section">
+  <div class="container">
+    <h2>O que nós <span class="highlight">oferecemos</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="assets/1.png" alt="Simplicidade" class="benefit-icon">
+        <h3>Simplicidade</h3>
+        <p>Simplifique a gestão da sua empresa com nossos sistemas intuitivos e comece a colher os benefícios imediatamente e concentre-se no crescimento do seu negócio.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="assets/2.png" alt="Integridade / Segurança" class="benefit-icon">
+        <h3>Integridade / Segurança</h3>
+        <p>A integridade dos seus dados é essencial para o sucesso da sua empresa. Conte com a nossa empresa de desenvolvimento de sistemas e mantenha a segurança das suas informações em dia.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="assets/3.png" alt="Tempestividade" class="benefit-icon">
+        <h3>Tempestividade</h3>
+        <p>A tempestividade dos nossos sistemas permite informações em tempo real para uma gestão mais ágil e eficiente dos seus processos, aumentando a produtividade e a lucratividade da sua empresa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Como Atuamos -->
+<section class="how-we-work-section" id="how-we-work" style="background-image: url('assets/bg.jpeg'); background-size: cover; background-position: center; background-attachment: fixed; padding: 30px 0;">
+  <div class="container">
+    <h2>Como nós <span class="highlight">atuamos</h2>
+      <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card how-we-work-card">
+          <img src="assets/negocio.jpeg" class="card-img-top" alt="O Negócio">
+          <div class="card-body">
+            <h5 class="card-title">O Negócio</h5>
+            <p class="card-text">Descubra como nosso sistema de gestão de tarefas pode ajudar sua empresa a otimizar a execução de tarefas, permitindo um acompanhamento efetivo e em tempo real dos trabalhos programados e executados. Com recursos de integração, simplicidade e segurança, você pode contar com uma ferramenta poderosa para melhorar a produtividade e eficiência de sua equipe.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card how-we-work-card">
+          <img src="assets/servicos.jpeg" class="card-img-top" alt="Serviços">
+          <div class="card-body">
+            <h5 class="card-title">Serviços</h5>
+            <p class="card-text">Desenvolvemos sistemas de alta qualidade e performance, sob medida para atender as necessidades específicas do seu negócio. Conte com a nossa expertise em personalização de sistemas para ter uma solução única e exclusiva para a sua empresa.</p>
+            <p class="card-text">Oferecemos consultoria de sistemas para ajudá-lo a otimizar processos, identificar oportunidades de melhoria e alcançar resultados ainda melhores.</p>
+          </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card how-we-work-card">
+          <img src="assets/solucao.jpeg" class="card-img-top" alt="A Solução">
+          <div class="card-body">
+            <h5 class="card-title">A Solução</h5>
+            <p class="card-text">Nosso sistema de projetos e gestão de tarefas, permite a gestão em tempo real. Com nosso sistema, é possível planejar, atribuir e monitorar tarefas de forma organizada, com visualização clara do andamento e status das atividades. Além disso, oferece recursos para a criação de calendários, definição de prazos e prioridades, geração de relatórios e muito mais.Sua equipe terá a agilidade e a eficiência necessárias para atingir os objetivos de forma estratégica e bem-sucedida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Explore Section -->
+  <section class="explore-section" id="explore">
+    <h3>Empresas que contratam nossos serviços</h3>
+    <div class="company-logos">
+      <img src="assets/Spotify_logo_with_text.svg.png" alt="DataConte">
+      <img src="assets/sport-club-recife-logo.svg" alt="DataConte">
+      <img src="assets/real-madrid-logo-77A97A4A0E-seeklogo.com.png" alt="DataConte">
+      <img src="assets/PlayStation_5_logo_and_wordmark.svg.png" alt="DataConte">
+      <img src="assets/share.jpg" alt="DataConte">
+    </div>
+    <div class="container">
+      <h2>Explore Nossas Especializações</h2>
+      <div class="explore-icons">
+        <!-- Python -->
+        <a href="https://www.python.org" target="_blank">
+          <div class="icon-card">
+            <i class="fab fa-python"></i>
+            <p>Python</p>
+          </div>
+        </a>
+        <!-- React -->
+        <a href="https://reactjs.org" target="_blank">
+          <div class="icon-card">
+            <i class="fab fa-react"></i>
+            <p>React</p>
+          </div>
+        </a>
+        <!-- Node.js -->
+        <a href="https://nodejs.org" target="_blank">
+          <div class="icon-card">
+            <i class="fab fa-node-js"></i>
+            <p>Node.js</p>
+          </div>
+        </a>
+        <!-- Docker -->
+        <a href="https://www.docker.com" target="_blank">
+          <div class="icon-card">
+            <i class="fab fa-docker"></i>
+            <p>Docker</p>
+          </div>
+        </a>
+        <!-- Node.js -->
+        <a href="https://github.com" target="_blank">
+          <div class="icon-card">
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="text-center py-4" id="contato">
+    <div class="container">
+      <div class="row footer-section">
+        <!-- Coluna do email -->
+        <div class="col-md-4">
+          <h5>Email</h5>
+          <p><a href="mailto:ribashow666@gmail.com">ribashow666@gmail.com</a></p>
+        </div>
+        <!-- Coluna do endereço -->
+        <div class="col-md-4">
+          <h5>Endereço</h5>
+          <p>
+            <a href="https://maps.app.goo.gl/y9Km3882yaZLignXA" target="_blank">
+              Boulevard of Broken Dreams
+            </a>
+          </p>
+        </div>
+        <!-- Coluna do telefone -->
+        <div class="col-md-4">
+          <h5>Telefone</h5>
+          <p><a href="tel:+55819">(81) 91234-5678</a></p>
+        </div>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/ailton-guilherme/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/Ribashow666" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <p>&copy; 2024 RIBAS - Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts do Bootstrap 5 via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
